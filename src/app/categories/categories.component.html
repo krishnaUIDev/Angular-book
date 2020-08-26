@@ -1,0 +1,16 @@
+<div class="container">
+  <h3>Categories</h3>
+  <p-tree
+    [value]="treeData"
+    selectionMode="checkbox"
+    [(selection)]="selectedFiles"
+  ></p-tree>
+  <button
+    class="button"
+    pButton
+    type="button"
+    label="Click"
+    (click)="handleClick($event)"
+  ></button>
+  <p-messages></p-messages>
+</div>
